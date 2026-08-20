@@ -55,6 +55,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="#tours" className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
+                  <ChevronRight className="w-3 h-3 text-amber-500" />
+                  <span>Tours & Packages</span>
+                </a>
+              </li>
+              <li>
                 <a href="#about" className="hover:text-amber-400 transition-colors flex items-center gap-1.5">
                   <ChevronRight className="w-3 h-3 text-amber-500" />
                   <span>About</span>

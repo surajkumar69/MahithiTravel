@@ -21,6 +21,7 @@ export default function Navbar({ onOpenBooking }) {
     { name: 'Home', href: '#home' },
     { name: 'Vehicles', href: '#vehicles' },
     { name: 'Services', href: '#services' },
+    { name: 'Tours & Packages', href: '#tours' },
     { name: 'About Us', href: '#about' },
     { name: 'Contact', href: '#contact' },
   ];

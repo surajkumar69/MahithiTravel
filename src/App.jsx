@@ -54,6 +54,9 @@ export default function App() {
         {/* Services Section */}
         <Services onOpenBooking={handleOpenBooking} />
 
+        {/* Tours & Packages Section */}
+        <ToursSection onOpenBooking={handleOpenBooking} />
+
         {/* Why Choose Us */}
         <WhyChooseUs />
 
