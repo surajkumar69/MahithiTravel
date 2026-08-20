@@ -12,7 +12,8 @@ export default function CallToAction({ onOpenBooking }) {
           alt="MAHITHI TRAVEL Chauffeur SUV Drive"
           className="w-full h-full object-cover object-center scale-105 opacity-30"
           onError={(e) => {
-            e.target.src = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1920&auto=format&fit=crop';
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1920&auto=format&fit=crop';
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#080c14] via-[#080c14]/90 to-[#080c14]" />

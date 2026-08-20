@@ -75,7 +75,10 @@ export default function BookingModal({ isOpen, onClose, selectedVehicle, initial
               alt={currentVehicleObj.name}
               className="w-20 h-14 object-cover rounded-xl border border-slate-800 bg-slate-900"
               onError={(e) => {
-                e.target.src = currentVehicleObj.fallbackImage;
+                e.currentTarget.onerror = null;
+                if (currentVehicleObj.fallbackImage) {
+                  e.currentTarget.src = currentVehicleObj.fallbackImage;
+                }
               }}
             />
             <div className="flex-1">

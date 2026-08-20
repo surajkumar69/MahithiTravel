@@ -78,9 +78,12 @@ export default function ToursSection({ onOpenBooking }) {
                 <img
                   src={pkg.image}
                   alt={pkg.title}
-                  className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                   onError={(e) => {
-                    e.target.src = pkg.fallbackImage;
+                    e.currentTarget.onerror = null;
+                    if (pkg.fallbackImage) {
+                      e.currentTarget.src = pkg.fallbackImage;
+                    }
                   }}
                 />
                 

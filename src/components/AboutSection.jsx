@@ -16,7 +16,8 @@ export default function AboutSection({ onOpenBooking }) {
                 alt="MAHITHI TRAVEL Toyota Innova Crysta Fleet"
                 className="w-full h-[320px] sm:h-[400px] md:h-[450px] object-contain group-hover:scale-[1.02] transition-transform duration-500 block"
                 onError={(e) => {
-                  e.target.src = '/images/vehicles/about-bg.jpg';
+                  e.currentTarget.onerror = null;
+                  e.currentTarget.src = '/images/vehicles/about-bg.jpg';
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0b0f17]/60 via-transparent to-transparent pointer-events-none" />

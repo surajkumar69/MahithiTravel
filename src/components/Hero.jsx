@@ -10,9 +10,10 @@ export default function Hero({ onOpenBooking }) {
         <img
           src="/images/vehicles/hero-bg.jpg"
           alt="MAHITHI TRAVEL Chauffeur SUV Drive"
-          className="w-full h-full object-cover object-center scale-105 transform animate-pulse duration-10000 opacity-40"
+          className="w-full h-full object-cover object-center scale-105 transform animate-pulse duration-1000 opacity-40"
           onError={(e) => {
-            e.target.src = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1920&auto=format&fit=crop';
+            e.currentTarget.onerror = null;
+            e.currentTarget.src = 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1920&auto=format&fit=crop';
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#080c14] via-[#080c14]/85 to-[#080c14]/60" />
